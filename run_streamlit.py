@@ -6,9 +6,6 @@ import glob
 # Title of the Streamlit app
 st.title('NVDA Stock Open Price Visualization')
 
-
-
-
 # List all CSV files in the ./data/ directory
 csv_files = glob.glob('./data/*.csv')
 csv_file_names = [file.split('/')[-1] for file in csv_files]  # Extract just the filenames for display

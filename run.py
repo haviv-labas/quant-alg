@@ -8,7 +8,7 @@ df = pd.read_csv('data/NVDA.csv')
 print(df.head())
 
 # Columns to check
-columns_to_check = ['Open', 'Close']
+columns_to_check = ['Date', 'Open', 'Close']
 
 # Check if all specified columns exist in the DataFrame
 are_all_columns_present = all(column in df.columns for column in columns_to_check)
